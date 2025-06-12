@@ -271,7 +271,7 @@
                 const timeoutId = setTimeout(() => controller.abort(), 30000);
                 
                 const response = await fetch(
-                    `/api/chatgpt/?q=${encodeURIComponent(query)}`,
+                    `https://chat-gpt.sl-bjs.workers.dev/?q=${encodeURIComponent(query)}`,
                     {
                         signal: controller.signal,
                         headers: {
