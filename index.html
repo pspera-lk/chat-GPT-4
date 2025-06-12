@@ -271,7 +271,7 @@
                 const timeoutId = setTimeout(() => controller.abort(), 30000);
                 
                 const response = await fetch(
-                    `/?q=${encodeURIComponent(query)}`,
+                    `/api/chatgpt/?q=${encodeURIComponent(query)}`,
                     {
                         signal: controller.signal,
                         headers: {
